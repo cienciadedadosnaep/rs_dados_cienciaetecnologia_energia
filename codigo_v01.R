@@ -128,7 +128,7 @@ exportJson0 <- toJSON(teste3_domest)
 
 
 titulo<-T_ST_P_No_CIENTEC$TITULO[2]
-subtexto<-"Coelba"
+subtexto<-"Fonte: SEI Prefeitura"
 link <- T_ST_P_No_CIENTEC$LINK[2]
 
 
@@ -139,20 +139,22 @@ texto <- paste('{"title":{"text":"',titulo,
                ']},"xAxis":[{"type":"category","gridIndex":0}],',
                '"yAxis":[{"gridIndex":0}],',
                '"series":[{"type":"bar",','"seriesLayoutBy":"row","color":"',corsec_recossa_azul[1],
-               '","showBackground":false,false,"backgroundStyle":{"color":"rgba(180, 180, 180, 0)}"},',
+               '","showBackground":false,"backgroundStyle":{"color":"rgba(180, 180, 180, 0)}"},',
                '"itemStyle":{"borderRadius":10,"borderColor":"',corsec_recossa_azul[1],
                '","borderWidth":2}},',
                '{"type":"bar",','"seriesLayoutBy":"row","color":"',corsec_recossa_azul[2],
-               '","showBackground":false,false,"backgroundStyle":{"color":"rgba(180, 180, 180, 0)}"},',
+               '","showBackground":false,"backgroundStyle":{"color":"rgba(180, 180, 180, 0)}"},',
                '"itemStyle":{"borderRadius":10,"borderColor":"',corsec_recossa_azul[2],
                '","borderWidth":2}},',
                '{"type":"bar",','"seriesLayoutBy":"row","color":"',corsec_recossa_azul[3],
-               '","showBackground":false,false,"backgroundStyle":{"color":"rgba(180, 180, 180, 0)}"},',
+               '","showBackground":false,"backgroundStyle":{"color":"rgba(180, 180, 180, 0)}"},',
                '"itemStyle":{"borderRadius":10,"borderColor":"',corsec_recossa_azul[3],
-               '","borderWidth":2}},','{"type":"bar",','"seriesLayoutBy":"row","color":"',corsec_recossa_azul[4],
-               '","showBackground":false,false,"backgroundStyle":{"color":"rgba(180, 180, 180, 0)}"},',
+               '","borderWidth":2}},',
+               '{"type":"bar",','"seriesLayoutBy":"row","color":"',corsec_recossa_azul[4],
+               '","showBackground":false,"backgroundStyle":{"color":"rgba(180, 180, 180, 0)}"},',
                '"itemStyle":{"borderRadius":10,"borderColor":"',corsec_recossa_azul[4],
-               '","borderWidth":2}},]','}',sep="")
+               '","borderWidth":2}}',
+               ']','}',sep="")
 
 ## OBS - Incluir 
 ## Se for necessario coloca mais colunas além das 2 do default, e escolher 
