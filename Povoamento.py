@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 
-df = pd.read_csv('E:/Área de trabalho/Códigos/R/rs_dados_cienciaetecnologia_energia/data/POVOAMENTO.csv', sep = ';')
+df = pd.read_csv('E:/Área de trabalho/Códigos/R/rs_dados_cienciaetecnologia_energia/data/POVOAMENTO2.csv', sep = ';')
 
 pd.set_option('display.max_colwidth', None)
 df.info()
