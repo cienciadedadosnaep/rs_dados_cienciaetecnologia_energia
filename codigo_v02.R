@@ -51,6 +51,9 @@ View(dados_energia_ssa)
 
 # Selecao de parte do banco que responde as perguntas da planilha de povoamento
 
+names(dados_energia_ssa) <- c("ano", "Residencial", "Industrial", "Comercial", "Iluminação Publica",
+                              "1", "2", "3", "4")
+
 dados_energia_ssa <- dados_energia_ssa[-14,]
 
 ##  Perguntas e titulos 
@@ -60,7 +63,7 @@ T_ST_P_No_CIENTEC <- read_csv("data/TEMA_SUBTEMA_P_No - CIENCIATECNOLOGIA.csv")
 #names(dados) = c("ano","q1","q2","q3","q41","q42",
 #                 "q43","q44","q45","q46","q47","q48")
 
-names(dados_energia_ssa) <- c("ano","Residencial","Industrial","Comercial","Iluminação Publica")
+#names(dados_energia_ssa) <- c("ano","Residencial","Industrial","Comercial","Iluminação Publica")
 
 
 
@@ -138,7 +141,7 @@ texto <- paste('{"title":{"text":"',titulo,
                '","sublink":"',link,
                '"},"legend":{"show":true,"top":"bottom"},"tooltip":{},"dataset":{"source":[',data_serie,
                ']},"xAxis":[{"type":"category","gridIndex":0}],',
-               '"yAxis":[{"type":"value","gridIndex":0,"axisLabel":{"formatter":"{value} Mwh"}}],',
+               '"yAxis":[{"type":"value","gridIndex":0,"axisLabel":{"formatter":"{value} GWh"}}],',
                '"series":[{"type":"bar",','"seriesLayoutBy":"row","color":"',corsec_recossa_azul[1],
                '","showBackground":false,"backgroundStyle":{"color":"rgba(180, 180, 180, 0)}"},',
                '"itemStyle":{"borderRadius":10,"borderColor":"',corsec_recossa_azul[1],

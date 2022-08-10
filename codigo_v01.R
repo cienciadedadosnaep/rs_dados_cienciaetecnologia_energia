@@ -51,6 +51,8 @@ View(dados_energia_ssa)
 
 # Selecao de parte do banco que responde as perguntas da planilha de povoamento
 
+names(dados_energia_ssa) <- c("ano", "Residencial", "Industrial", "Comercial", "Iluminação Publica",
+                              "1", "2", "3", "4")
 
 ##  Perguntas e titulos 
 T_ST_P_No_CIENTEC <- read_csv("data/TEMA_SUBTEMA_P_No - CIENCIATECNOLOGIA.csv")
@@ -137,7 +139,7 @@ texto <- paste('{"title":{"text":"',titulo,
                '","sublink":"',link,
                '"},"legend":{"show":true,"top":"bottom"},"tooltip":{},"dataset":{"source":[',data_serie,
                ']},"xAxis":[{"type":"category","gridIndex":0}],',
-               '"yAxis":[{"type":"value","gridIndex":0,"axisLabel":{"formatter":"{value} Mwh"}}],',
+               '"yAxis":[{"type":"value","gridIndex":0,"axisLabel":{"formatter":"{value} GWh"}}],',
                '"series":[{"type":"bar",','"seriesLayoutBy":"row","color":"',corsec_recossa_azul[1],
                '","showBackground":false,"backgroundStyle":{"color":"rgba(180, 180, 180, 0)}"},',
                '"itemStyle":{"borderRadius":10,"borderColor":"',corsec_recossa_azul[1],
